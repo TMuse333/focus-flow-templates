@@ -31,7 +31,12 @@ displayBoxData,
 FullImageDisplayData,
 featureBoxData, carouselGridData,
 carouselData,
-priceCardData} from "@/data/data";
+priceCardData,
+tilteSlideData,
+circleStepsData} from "@/data/data";
+import Navbar from "@/components/test";
+import TiltingContent from "@/components/tiltSlideContent";
+import  CircleSteps  from "@/components/circleStepsTest";
 
 // import ColorPalette from "@/components/typerTest";
 // import Herobanner from "@/components/test";
@@ -44,9 +49,35 @@ priceCardData} from "@/data/data";
 // import FullBodyHero from "@/components/fullBodyTest";
 export default function Home() {
 
+  const links = [
+    {
+    destination:'/landingpage',
+    name:'Landing page 1'
+  },
+  {
+    destination:'/landingPage2',
+    name:'Landing page 2'
+  },
+
+]
+
   const isMobile:boolean = false
   return (
   <main className="w-screen">
+
+    <div className="w-screen h-[60vh] bg-black"
+    />
+
+    {/* <TiltingContent
+    {...tilteSlideData}
+    bgColor='bg-gradient-to-b from-blue-800 to-blue-400'
+    imageMargin="my-[-6rem] md:my-0"
+    textBgColor="bg-blue-200/50"
+    button={<>
+    <button className="bg-orange-200 mt-4 p-3
+    rounded-2xl text-black"> click me</button>
+    </>}
+    /> */}
 
     {/* <ExperienceCard
     src={img}
@@ -101,13 +132,13 @@ export default function Home() {
      
 
 
-      <VerticalImageTextBox
+      {/* <VerticalImageTextBox
       {...verticalBoxData}
       // isMobile={false}
       // mainGradientColor="#00bfff"
       // darkGradientColor="#009acd"
       // brightGradientColor="#009acd"
-      />
+      /> */}
 
       {/* <ThreeBoxHero
       {...threeBoxHeroData}
@@ -142,14 +173,17 @@ hoverColor="hover:bg-blue-500"
 glowColor="shadow-[0_0_25px_#00bfff]"
 
 /> */}
-
+<Navbar
+links={links}
+/>
+{/* 
 <FullImageDisplay
 boxes={FullImageDisplayData}
-/>
+/> */}
 
 
 
-<FeatureBoxes
+{/* <FeatureBoxes
 boxData={featureBoxData}
 boxColor="bg-[#00bfff]"
 />
@@ -173,19 +207,23 @@ isMobile={false}
 images={featureBoxData}
 isMobile={false}
 slideColor="bg-gradient-to-br from-red-400 to-blue-400"
-/>
+/> */}
 
 {/* <PriceCards
 priceData={priceCardData}
 
 /> */}
 
-<PriceCards
+{/* <PriceCards
 cardColor="bg-gradient-to-tr from-blue-400 to-blue-200"
 priceData={priceCardData}
-/>
+/> */}
 
-
+<CircleSteps
+title="How to be a real one"
+description="Follow this path to live a life of purity"
+boxColor="bg-gradient-to-b from-orange-400 to-blue-200"
+steps={circleStepsData}/>
 
 
  

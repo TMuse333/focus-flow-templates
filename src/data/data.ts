@@ -526,7 +526,65 @@ export const testimonialsDatas = {
   
   
   
-  
+export const tilteSlideData = {
+  title: 'Your New Title', // Set your dynamic title here
+  src: "/focusFlow-brain-nobg.png",
+  alt: 'Description of the image', // You can describe the image here
+  description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem iste saepe incidunt expedita, odio aut earum pariatur eum praesentium maiores facere ipsam placeat. Itaque soluta quas suscipit nesciunt ipsa sit quae voluptas in magnam, rerum explicabo. Ipsam facilis est tenetur illum distinctio voluptatem, temporibus asperiores. Rem repellendus, consequatur voluptatem suscipit atque tempora cumque enim voluptas labore nihil rerum nam!",
+
+};
+
+export const circleStepsData = [
+  {
+    number: 1,
+    title: "Step 1: Initial Consultation",
+    description: "Meet with your REALTOR®️ to discuss your goals, timeline, and expectations. We’ll do a walkthrough of your home, assess its condition, and discuss how to make the selling process smooth and stress-free.",
+  },
+  {
+    number: 2,
+    title: "Step 2: Determine the Right Listing Price",
+    description: "I’ll conduct a Comparative Market Analysis (CMA) to determine your home’s value. Together, we’ll choose a pricing strategy to attract buyers while maximizing your return on investment.",
+  },
+  {
+    number: 3,
+    title: "Step 3: Prepare Your Home for Market",
+    description: "First impressions matter. We’ll help declutter, clean, and stage your home to make it shine. I’ll also guide you through any needed repairs and arrange for professional photos and videos to showcase your home.",
+  },
+  {
+    number: 4,
+    title: "Step 4: Paperwork & Required Forms",
+    description: "Before listing, you’ll complete important documents such as the Seller Designated Brokerage Agreement, Property Disclosure Statement, and Residential Listing Input Form to ensure everything is in order.",
+  },
+  {
+    number: 5,
+    title: "Step 5: Launch Your Listing",
+    description: "Once your home is ready, we’ll go live on MLS®️, complete with professional photos and compelling descriptions. We’ll execute a marketing strategy to get your property the exposure it deserves.",
+  },
+  {
+    number: 6,
+    title: "Step 6: Reviewing Offers",
+    description: "When offers come in, I’ll present each one and help you negotiate terms, price, and conditions. Together, we’ll accept the best offer to move forward with the sale.",
+  },
+  {
+    number: 7,
+    title: "Step 7: Fulfilling Buyer Conditions",
+    description: "The buyer will work to satisfy conditions like financing, inspections, and insurance approval. We’ll navigate through this process, responding to inspection findings or negotiating necessary adjustments.",
+  },
+  {
+    number: 8,
+    title: "Step 8: Legal & Closing Preparations",
+    description: "Prepare for the final steps by hiring a real estate lawyer, signing sale documents, and organizing your move. I’ll ensure everything is in order for a smooth closing.",
+  },
+  {
+    number: 9,
+    title: "Step 9: Closing Day",
+    description: "On closing day, your lawyer will finalize the sale, transfer the funds, and register the deed. Once everything is settled, you’ll hand over the keys to the buyer and officially complete the sale!",
+  },
+];
+
+
+
   
   
   

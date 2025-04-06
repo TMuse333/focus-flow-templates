@@ -17,11 +17,26 @@ import { countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalB
     featureBoxData, carouselGridData,
     carouselData,
     priceCardData} from "@/data/data";
+import Navbar from '@/components/test';
 const Lander = () => {
 
+    const links = [
+        {
+        destination:'/landingpage',
+        name:'Landing page 1'
+      },
+      {
+        destination:'/landingPage2',
+        name:'Landing page 2'
+      },
+    
+    ]
 
     return (
         <>
+        <Navbar
+        links={links}
+        />
        
         <LandingPage1
       {...landingPage1Data}

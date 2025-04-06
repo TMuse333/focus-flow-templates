@@ -1,3 +1,5 @@
+import { ServicePage1Props } from "focusflow-components";
+
 export const landingPage1Data = {
   heroProps: {
     bgImage: "/skyline.webp",
@@ -326,3 +328,113 @@ export const landingPage2Data = {
     brightGradientColor:"#009acd"
   }
 };
+
+
+export const servicePage1Data: ServicePage1Props = {
+  heroContent: {
+    h1: "Welcome to Our Service",
+    h2: "Transform Your Business with Our Solutions",
+    pTag: "We provide innovative solutions tailored to your needs.",
+    boxData: [
+      {
+        title: "Feature 1",
+        description: "Description of feature 1. this is to get people excited"
+      },
+      {
+        title: "Feature 2",
+        description: "Description of feature 2. this is to counter any objections they may have"
+      },
+      {
+        title: "Feature 3",
+        description: "Description of feature 3. this is to signify you are as real as they come"
+      }
+    ],
+    gradient: {
+      color1: "#00bfff",
+      color2: "orange-400"
+    },
+    bgColor: "bg-gradient-to-br from-[#00bfff] to-orange-400",
+    boxBgColor: "bg-blue-200", // example background for the boxes
+    button1: null, // Leaving button blank as per your request
+    button2: null, // Leaving button blank as per your request
+  },
+  introContent: {
+    title: "Introduction to Our Services",
+    src: "/path-to-image.jpg", // Example image path
+    alt: "Intro Image",
+    description: "Our services are designed to meet your business needs.",
+    button: null, // Leaving button blank as per your request
+    bgColor: "bg-gradient-to-br from-[#00bfff] to-orange-400",
+    textBgColor:'bg-blue-200/50'
+  },
+  features: {
+    title: "Our Key Features",
+    description: "We offer the following features to help your business grow.",
+    boxColor:'bg-gradient-to-tr from-blue-600 to-orange-600',
+    boxData: [
+      {
+        src: "/focusFlow-brain-nobg.png",
+        alt: "Feature 1",
+        title: "Feature 1",
+        description: "This is a detailed description of feature 1, highlighting its unique benefits and how it can add value to the user experience."
+
+      },
+      {
+        src: "/focusFlow-brain-nobg.png",
+        alt: "Feature 2",
+        title: "Feature 2",
+        description: "This is a detailed description of feature 1, highlighting its unique benefits and how it can add value to the user experience."
+
+      },
+      {
+        src: "/focusFlow-brain-nobg.png",
+        alt: "Feature 2",
+        title: "Feature 2",
+        description: "This is a detailed description of feature 1, highlighting its unique benefits and how it can add value to the user experience."
+
+      },
+      {
+        src: "/focusFlow-brain-nobg.png",
+        alt: "Feature 2",
+        title: "Feature 2",
+        description: "This is a detailed description of feature 1, highlighting its unique benefits and how it can add value to the user experience."
+
+      }
+    ],
+    
+  },
+  carouselImages: {
+    images: [
+      {
+        src: "/skyline.webp",
+        alt: "Image 1"
+      },
+      {
+        src: "/skyline.webp",
+        alt: "Image 2"
+      },
+      {
+        src: "/skyline.webp",
+        alt: "Image 3"
+      }
+    ],
+    // bgColor: "bg-gradient-to-br from-[#00bfff] to-orange-400",
+    isMobile: false, // Assuming it's not for mobile in this case, adjust accordingly
+  },
+  closingContent: {
+    title: "Get Started with Us Today",
+    description: "Contact us for more details or start a project with us.",
+    logo: "/focusFlow-brain-nobg.png", // Example logo path
+    bgImage: "/closing-bg.jpg", // Example background image path
+    isMobile: false, // Adjust as needed
+    subTitle: "We are here to help you every step of the way.",
+    button: null, // Leaving button blank as per your request
+    mainGradientColor:"#00bfff",
+    darkGradientColor:"#009acd",
+    brightGradientColor:"#009acd"
+  },
+  textColor: "text-black", // Assuming white text for readability against the background gradient
+  bgColor: "bg-gray-200", 
+
+};
+
