@@ -1,41 +1,42 @@
 "use client"
 
-import Image from "next/image";
-import img from '../../public/vercel.svg'
-import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
-  CountUpImageTextBox,
-  ParallaxText, 
-  AppearingGradient,
-  VerticalImageTextBox,
-  FullBodyHero, CarouselHero,ThreeBoxHero,
-  ImageLogoHero,
-  FullImageDisplay,
-  FeatureBoxes,
-  Carousel,
-  CarouselGrid,
-  SlideShowCarousel,
-  PriceCards,
-  LandingPage1
-  // SlidingText
-  // TypeWriter
-} from 'focusflow-components'
-import TypeWriter from "@/components/typerTest";
+// import Image from "next/image";
+// import img from '../../public/vercel.svg'
+// import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
+//   CountUpImageTextBox,
+//   ParallaxText, 
+//   AppearingGradient,
+//   VerticalImageTextBox,
+//   FullBodyHero, CarouselHero,ThreeBoxHero,
+//   ImageLogoHero,
+//   FullImageDisplay,
+//   FeatureBoxes,
+//   Carousel,
+//   CarouselGrid,
+//   SlideShowCarousel,
+//   PriceCards,
+//   LandingPage1
+//   // SlidingText
+//   // TypeWriter
+// } from 'focusflow-components'
+// import TypeWriter from "@/components/typerTest";
 // import Test from "@/components/test";
-import { countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
-threeBoxHeroData, 
-fullBodyHeroData,
-carouselHeroTestData,
-heroBanner2Data,
-imageLogoHero,
-displayBoxData,
-FullImageDisplayData,
-featureBoxData, carouselGridData,
-carouselData,
-priceCardData,
-tilteSlideData,
+import {
+//    countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
+// threeBoxHeroData, 
+// fullBodyHeroData,
+// carouselHeroTestData,
+// heroBanner2Data,
+// imageLogoHero,
+// displayBoxData,
+// FullImageDisplayData,
+// featureBoxData, carouselGridData,
+// carouselData,
+// priceCardData,
+// tilteSlideData,
 circleStepsData} from "@/data/data";
 import Navbar from "@/components/test";
-import TiltingContent from "@/components/tiltSlideContent";
+// import TiltingContent from "@/components/tiltSlideContent";
 import  CircleSteps  from "@/components/circleStepsTest";
 
 // import ColorPalette from "@/components/typerTest";
@@ -58,10 +59,14 @@ export default function Home() {
     destination:'/landingPage2',
     name:'Landing page 2'
   },
+  {
+    destination:'/servicePage2',
+    name:'Service page 2'
+  }
 
 ]
 
-  const isMobile:boolean = false
+  // const isMobile:boolean = false
   return (
   <main className="w-screen">
 
@@ -214,16 +219,17 @@ priceData={priceCardData}
 
 /> */}
 
-{/* <PriceCards
-cardColor="bg-gradient-to-tr from-blue-400 to-blue-200"
-priceData={priceCardData}
-/> */}
+
 
 <CircleSteps
 title="How to be a real one"
 description="Follow this path to live a life of purity"
 boxColor="bg-gradient-to-b from-orange-400 to-blue-200"
 steps={circleStepsData}/>
+
+<div className="h-screen w-screen bg-gray-300
+"
+/>
 
 
  

@@ -333,30 +333,24 @@ export const landingPage2Data = {
 export const servicePage1Data: ServicePage1Props = {
   heroContent: {
     h1: "Welcome to Our Service",
-    h2: "Transform Your Business with Our Solutions",
-    pTag: "We provide innovative solutions tailored to your needs.",
+    h2: "Transform Your Business Today",
+    pTag: "We provide the tools you need to streamline your operations and grow.",
     boxData: [
       {
         title: "Feature 1",
-        description: "Description of feature 1. this is to get people excited"
+        description: "Description of the first feature."
       },
       {
         title: "Feature 2",
-        description: "Description of feature 2. this is to counter any objections they may have"
+        description: "Description of the second feature."
       },
       {
         title: "Feature 3",
-        description: "Description of feature 3. this is to signify you are as real as they come"
+        description: "Description of the third feature."
       }
     ],
-    gradient: {
-      color1: "#00bfff",
-      color2: "orange-400"
-    },
-    bgColor: "bg-gradient-to-br from-[#00bfff] to-orange-400",
-    boxBgColor: "bg-blue-200", // example background for the boxes
-    button1: null, // Leaving button blank as per your request
-    button2: null, // Leaving button blank as per your request
+    boxBgColor: "bg-gray-400",
+    textColor: "text-black"
   },
   introContent: {
     title: "Introduction to Our Services",
@@ -436,5 +430,199 @@ export const servicePage1Data: ServicePage1Props = {
   textColor: "text-black", // Assuming white text for readability against the background gradient
   bgColor: "bg-gray-200", 
 
+  steps: {
+    steps: [
+      {
+        number: 1,
+        title: "Step 1: Introduction",
+        description: "Learn about the service and how it works."
+      },
+      {
+        number: 2,
+        title: "Step 2: Setup",
+        description: "Set up your account and preferences."
+      },
+      {
+        number: 3,
+        title: "Step 3: Customization",
+        description: "Customize the features according to your needs."
+      },
+      {
+        number: 4,
+        title: "Step 4: Training",
+        description: "Complete the training modules to get the most out of the service."
+      },
+      {
+        number: 5,
+        title: "Step 5: Implementation",
+        description: "Start implementing the service in your daily operations."
+      },
+      {
+        number: 6,
+        title: "Step 6: Review & Feedback",
+        description: "Review your progress and provide feedback for improvements."
+      }
+    ],
+    boxColor: "bg-blue-500",
+    bgColor: "bg-gray-300",
+    title: "How It Works",
+    description: "A step-by-step guide to how we deliver our service.",
+    textColor: "text-black",
+    // subTitle: "Learn more about the process"
+  },
+
 };
+
+
+export const servicePage2Data = {
+  heroContent: {
+    h1: "Your Service Title Here",
+    h2: "Your Service Subtitle Here",
+    pTag: "A short paragraph explaining the service.",
+    boxData: [
+      {
+        title: "Box Title 1",
+        description: "Description for box 1."
+      },
+      {
+        title: "Box Title 2",
+        description: "Description for box 2."
+      },
+      {
+        title: "Box Title 3",
+        description: "Description for box 3."
+      }
+    ],
+    boxBgColor:'bg-gray-400',
+    
+  },
+  introContent: {
+    title: "Introduction to Our Service",
+    src: "/path/to/image.jpg",  // Placeholder image
+    alt: "Service image",
+    aspectHeader:"Key benefits",
+    description: "Detailed description about the service offered.",
+    aspects: [
+      "Aspect 1",
+      "Aspect 2",
+      "Aspect 3"
+    ],
+    link: "https://example.com",  // Placeholder link
+    buttonText: ""  // Empty button text as requested
+  },
+
+  features: {
+    title: "Key Features",
+    description: "Overview of the features of the service.",
+    boxData: [
+      {
+        src: "/path/to/image1.jpg",  // Placeholder image
+        alt: "Feature 1",
+        title: "Feature 1",
+        description: "Feature 1 description."
+      },
+      {
+        src: "/path/to/image2.jpg",  // Placeholder image
+        alt: "Feature 2",
+        title: "Feature 2",
+        description: "Feature 2 description."
+      },
+      {
+        src: "/path/to/image3.jpg",  // Placeholder image
+        alt: "Feature 3",
+        title: "Feature 3",
+        description: "Feature 3 description."
+      }
+    ],
+    boxColor:'bg-blue-400'
+  },
+  testimonials: {
+
+  
+    testimonials: [
+      {
+        quote: "This is an amazing service!",
+        author: "Client 1",
+        effect: "Positive"
+      },
+      {
+        quote: "Changed the way we do business.",
+        author: "Client 2",
+        effect: "Positive"
+      }
+    ],
+    bgColor: "bg-gray-300"
+  },
+  steps: {
+    steps: [
+      {
+        number: 1,
+        title: "Step 1: Introduction",
+        description: "Learn about the service and how it works."
+      },
+      {
+        number: 2,
+        title: "Step 2: Setup",
+        description: "Set up your account and preferences."
+      },
+      {
+        number: 3,
+        title: "Step 3: Customization",
+        description: "Customize the features according to your needs."
+      },
+      {
+        number: 4,
+        title: "Step 4: Training",
+        description: "Complete the training modules to get the most out of the service."
+      },
+      {
+        number: 5,
+        title: "Step 5: Implementation",
+        description: "Start implementing the service in your daily operations."
+      },
+      {
+        number: 6,
+        title: "Step 6: Review & Feedback",
+        description: "Review your progress and provide feedback for improvements."
+      }
+    ],
+    boxColor: "bg-blue-500",
+    bgColor: "bg-gray-300",
+    title: "How It Works",
+    description: "A step-by-step guide to how we deliver our service.",
+    textColor: "text-black",
+    // subTitle: "Learn more about the process"
+  },
+  gettingStarted: {
+    title: "Getting Started",
+    description: "Here's what you need to do to get started with our service.",
+    listAspects: [
+      {
+        title: "Financial Statements",
+        description: "We need your past financial statements to understand your current financial situation."
+      },
+      {
+        title: "Investment Preferences",
+        description: "Tell us about your preferred investment options and risk tolerance."
+      },
+      {
+        title: "Debt and Liabilities",
+        description: "Provide details on any outstanding debts or liabilities you may have."
+      },
+      {
+        title: "Income and Assets",
+        description: "Share information about your income sources and assets to help us plan effectively."
+      },
+      {
+        title: "Financial Goals",
+        description: "Describe your short- and long-term financial goals to guide our strategy."
+      }
+    ],
+    subTitle:'Work with is',
+    isMobile:false
+  },
+  textColor: "text-black",
+  bgColor: "bg-gray-300"
+};
+
 

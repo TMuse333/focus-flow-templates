@@ -31,7 +31,7 @@ const TiltingContent = ({
     const [tiltAngle, setTiltAngle] = useState(30);
     const contentRef = useRef<HTMLDivElement>(null);
 
-    const [tiltComplete, setTiltComplete] = useState(false)
+    // const [tiltComplete, setTiltComplete] = useState(false)
     const [slideComplete, setSlideComplete] = useState(false)
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const TiltingContent = ({
             if (!contentElement) return;
     
             const elementTop = contentElement.getBoundingClientRect().top;
-            const elementHeight = contentElement.clientHeight;
+            // const elementHeight = contentElement.clientHeight;
             const windowHeight = window.innerHeight;
     
             const visiblePercent = Math.max(0, Math.min(100, (windowHeight - elementTop) / windowHeight * 100));
@@ -51,7 +51,7 @@ const TiltingContent = ({
     
             setTiltAngle(newTiltAngle);
     
-            const offset = 350;
+            // const offset = 350;
             // if (elementTop < windowHeight - offset) {
             //     setTiltComplete(true);
             // }
@@ -61,11 +61,11 @@ const TiltingContent = ({
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    useEffect(()=>{
-        if(tiltAngle === 0){
-            setTiltComplete(true)
-        }
-    },[tiltAngle])
+    // useEffect(()=>{
+    //     if(tiltAngle === 0){
+    //         setTiltComplete(true)
+    //     }
+    // },[tiltAngle])
     
 
     return (

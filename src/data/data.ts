@@ -10,26 +10,23 @@ export const TextAndListData: TextAndListProps = {
     isMobile: false, // or true depending on your use case
     listAspects: [
       {
-        src: "/vercel.svg",
-        alt: "Example Image",
+    
+      
         title: "Aspect Title",
         description: "This aspect highlights a key feature of the component, explaining its importance and how it enhances the user experience by providing clear, structured information.",
       },
       {
-        src: "/vercel.svg",
-        alt: "Example Image",
+     
         title: "Aspect Title",
         description: "Another important aspect that emphasizes the versatility of this component, allowing for different types of content to be displayed seamlessly across various screen sizes and devices.",
       },
       {
-        src: "/vercel.svg",
-        alt: "Example Image",
+      
         title: "Aspect Title",
         description: "A feature that enhances accessibility, ensuring that all users, regardless of their device or browsing preferences, can easily engage with the content and navigate through the information effortlessly.",
       },
       {
-        src: "/vercel.svg",
-        alt: "Example Image",
+     
         title: "Aspect Title",
         description: "This aspect focuses on the component’s adaptability, allowing customization of colors, images, and text to match the branding and design preferences of different applications or websites.",
       },
