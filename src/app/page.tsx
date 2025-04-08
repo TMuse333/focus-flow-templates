@@ -222,6 +222,8 @@ priceData={priceCardData}
 
 
 <CircleSteps
+
+bgColor="bg-gray-800"
 title="How to be a real one"
 description="Follow this path to live a life of purity"
 boxColor="bg-gradient-to-b from-orange-400 to-blue-200"

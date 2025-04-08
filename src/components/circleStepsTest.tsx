@@ -12,10 +12,11 @@ export interface Element {
   description: string;
   inView?: boolean;
   index?: number;
-  isLast?: boolean; // Added to identify the last step
+
 }
 
-const CircleStep = ({ number, title, description, inView, index, isLast = false }: Element) => {
+const CircleStep = ({ number, title, description, inView, index,
+ }: Element) => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -33,16 +34,10 @@ const CircleStep = ({ number, title, description, inView, index, isLast = false 
 
 
   return (
-    <div className={`relative ${isLast ? "sticky top-0 h-screen w-screen" : ""}`}>
+    <>
+    {/* <div className={`relative ${isLast && bigLast ? "sticky top-0 h-screen w-screen" : ""}`}> */}
   {/* Full-Screen Overlay for Last Step */}
-  {isLast && (
-    <div className="absolute inset-0 bg-gray-900 text-white flex items-center justify-center z-50">
-      <div className="text-center">
-        <h2 className="text-5xl font-bold">Final Step: {title}</h2>
-        <p className="text-xl mt-4 max-w-lg">{description}</p>
-      </div>
-    </div>
-  )}
+
 
   <div className="relative w-[100px] h-[100px] flex items-center justify-center mb-4 mx-auto">
     <svg width="100" height="100" viewBox="0 0 100 100">
@@ -71,8 +66,8 @@ const CircleStep = ({ number, title, description, inView, index, isLast = false 
   <p className="text-sm sm:text-md md:text-lg text-center mt-2 max-w-[350px] mx-auto">
     {description}
   </p>
-</div>
-
+{/* </div> */}
+</>
   );
 };
 
@@ -83,6 +78,7 @@ export interface CircleStepsProps {
   title: string;
   description: string;
   textColor?: string;
+  bigLast?:boolean
 }
 
 const CircleSteps = ({
@@ -92,6 +88,7 @@ const CircleSteps = ({
   title,
   description,
   textColor,
+  bigLast
 }: CircleStepsProps): React.JSX.Element => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -161,7 +158,7 @@ const CircleSteps = ({
         >
 {steps.map((step, index) => {
   // Render the final step separately outside of the main div
-  if (index === steps.length - 1) {
+  if (index === steps.length - 1 && bigLast) {
     return (
       <div key={index} className={`sticky h-[70vh] mr-12 top-0 w-screen flex flex-col items-center justify-center z-20 ${boxColor}`}>
         <motion.h2
@@ -189,7 +186,7 @@ const CircleSteps = ({
   return (
     <motion.div
       key={index}
-      className={`relative z-10 ${boxColor} h-[70vh] rounded-2xl ${index === steps.length - 1 ? 'w-screen mr-12' : ''}`}
+      className={`relative z-10 ${boxColor} h-[70vh] rounded-2xl ${index === steps.length - 1 && bigLast ?  'w-screen mr-12' : ''}`}
     >
       <CircleStep {...step} index={index} inView={inView} />
     </motion.div>

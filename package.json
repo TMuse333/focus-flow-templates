@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "focusflow-components": "^1.0.77",
+    "focusflow-components": "^1.0.78",
     "gsap": "^3.12.7",
     "next": "15.2.3",
     "react": "^19.0.0",
