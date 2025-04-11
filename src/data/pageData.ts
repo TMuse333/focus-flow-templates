@@ -508,7 +508,9 @@ export const servicePage2Data = {
       "Aspect 3"
     ],
     link: "https://example.com",  // Placeholder link
-    buttonText: ""  // Empty button text as requested
+    buttonText: "" , // Empty button text as requested,
+    bgColor:'bg-gray-600',
+    textColor:'text-white'
   },
 
   features: {
@@ -619,7 +621,12 @@ export const servicePage2Data = {
       }
     ],
     subTitle:'Work with is',
-    isMobile:false
+    isMobile:false,
+    titleColor:'text-white',
+    titleBgColor:'bg-gray-600',
+    descriptionBgColor:'bg-gray-300',
+    descriptionTextColor:'text-black',
+    textColor:'text-black'
   },
   textColor: "text-black",
   bgColor: "bg-gray-300"

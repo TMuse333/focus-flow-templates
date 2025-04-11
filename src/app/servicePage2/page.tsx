@@ -14,6 +14,7 @@ const Page = () => {
             {...servicePage2Data}
             isMobile={false}
             bgColor='bg-gray-300'
+           
             />
         </main>
     )

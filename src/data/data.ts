@@ -31,6 +31,11 @@ export const TextAndListData: TextAndListProps = {
         description: "This aspect focuses on the component’s adaptability, allowing customization of colors, images, and text to match the branding and design preferences of different applications or websites.",
       },
     ],
+    titleColor:'text-black',
+    titleBgColor:'bg-gray-500',
+    descriptionBgColor:'bg-gray-300',
+    descriptionTextColor:'text-black',
+    
 };
 
 export const countUpData: CountUpImageTextProps = {
@@ -523,14 +528,25 @@ export const testimonialsDatas = {
   
   
   
-export const tilteSlideData = {
-  title: 'Your New Title', // Set your dynamic title here
-  src: "/focusFlow-brain-nobg.png",
-  alt: 'Description of the image', // You can describe the image here
-  description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatem iste saepe incidunt expedita, odio aut earum pariatur eum praesentium maiores facere ipsam placeat. Itaque soluta quas suscipit nesciunt ipsa sit quae voluptas in magnam, rerum explicabo. Ipsam facilis est tenetur illum distinctio voluptatem, temporibus asperiores. Rem repellendus, consequatur voluptatem suscipit atque tempora cumque enim voluptas labore nihil rerum nam!",
 
+
+export const tilteSlideData = {
+  title: 'Elevate your digital presence',
+  src: "/focusFlow-brain-nobg.png",
+  alt: 'Abstract brain and network illustration',
+  description:
+    "Your online presence is your first impression. A professionally designed website builds trust, captures attention, and positions you as the go-to expert in your space. Let your brand shine 24/7 and convert more visitors into leads effortlessly.",
 };
+
+export const tiltData2 = {
+  title: 'Websites are great!',
+  src: "/skyline.webp",
+  alt: 'Skyline Image',
+  description:
+    "A great website doesn’t just look good—it works for you. From building credibility to generating leads and saving time, it’s your most valuable tool in today’s digital-first world. Start strong, stand out, and stay ahead.",
+};
+
+
 
 export const circleStepsData = [
   {

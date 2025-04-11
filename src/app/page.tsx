@@ -2,39 +2,41 @@
 
 // import Image from "next/image";
 // import img from '../../public/vercel.svg'
-// import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
-//   CountUpImageTextBox,
-//   ParallaxText, 
-//   AppearingGradient,
-//   VerticalImageTextBox,
-//   FullBodyHero, CarouselHero,ThreeBoxHero,
-//   ImageLogoHero,
-//   FullImageDisplay,
-//   FeatureBoxes,
-//   Carousel,
-//   CarouselGrid,
-//   SlideShowCarousel,
-//   PriceCards,
-//   LandingPage1
-//   // SlidingText
-//   // TypeWriter
-// } from 'focusflow-components'
+import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
+  CountUpImageTextBox,
+  ParallaxText, 
+  AppearingGradient,
+  VerticalImageTextBox,
+  FullBodyHero, CarouselHero,ThreeBoxHero,
+  ImageLogoHero,
+  FullImageDisplay,
+  FeatureBoxes,
+  Carousel,
+  CarouselGrid,
+  SlideShowCarousel,
+  PriceCards,
+  LandingPage1,
+  TiltingContent
+  // SlidingText
+  // TypeWriter
+} from 'focusflow-components'
 // import TypeWriter from "@/components/typerTest";
 // import Test from "@/components/test";
 import {
-//    countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
-// threeBoxHeroData, 
-// fullBodyHeroData,
-// carouselHeroTestData,
-// heroBanner2Data,
-// imageLogoHero,
-// displayBoxData,
-// FullImageDisplayData,
-// featureBoxData, carouselGridData,
-// carouselData,
-// priceCardData,
-// tilteSlideData,
-circleStepsData} from "@/data/data";
+   countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
+threeBoxHeroData, 
+fullBodyHeroData,
+carouselHeroTestData,
+heroBanner2Data,
+imageLogoHero,
+displayBoxData,
+FullImageDisplayData,
+featureBoxData, carouselGridData,
+carouselData,
+priceCardData,
+tilteSlideData,
+circleStepsData,
+tiltData2} from "@/data/data";
 import Navbar from "@/components/test";
 // import TiltingContent from "@/components/tiltSlideContent";
 import  CircleSteps  from "@/components/circleStepsTest";
@@ -68,9 +70,9 @@ export default function Home() {
 
   // const isMobile:boolean = false
   return (
-  <main className="w-screen">
+  <main className="w-screen space-y-40 bg-blue-200">
 
-    <div className="w-screen h-[60vh] bg-black"
+    <div className="w-screen h-[60vh] "
     />
 
     {/* <TiltingContent
@@ -115,7 +117,7 @@ export default function Home() {
       {...ImageAspectsData}
       bgColor='bg-[#00bfff]'
       /> */}
-<span className="font-bold text-xl text-2xl">&gt;</span>
+<span className="font-bold text-xl text-2xl"></span>
 
       {/* <CountUpImageTextBox
       {...countUpData}
@@ -221,7 +223,7 @@ priceData={priceCardData}
 
 
 
-<CircleSteps
+{/* <CircleSteps
 
 bgColor="bg-gray-800"
 title="How to be a real one"
@@ -231,6 +233,23 @@ steps={circleStepsData}/>
 
 <div className="h-screen w-screen bg-gray-300
 "
+/> */}
+
+<TiltingContent
+{...tilteSlideData}
+bgColor="bg-gradient-to-tr from-[#00bfff] to-blue-300"
+textBgColor='bg-blue-600/50'
+/>
+
+<TiltingContent
+{...tiltData2}
+bgColor="bg-gradient-to-tr from-[#00bfff] to-blue-300"
+textBgColor='bg-blue-600/50'
+reverse
+objectCover
+/>
+
+<div className='h-[60vh] w-screen bg-black'
 />
 
 

@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ links,relative }) => {
 
 
                 <p className="ml-2 text-sm mt-auto mb-auto  lg:text-4xl mr-auto lg:mr-0 pl-6 lg:pl-0 text-black
-                ">Ontario Cash for Houses</p>
+                ">Focus flow software</p>
                 </Link>
                 <div
                     className={`absolute right-[5%] top-[30%] flex flex-col justify-center items-center lg:relative lg:top-auto lg:right-auto`}
