@@ -1,8 +1,8 @@
 "use client"
 
 import Navbar from "@/components/test"
-import { landingPage2Data } from "@/data/pageData"
-import { LandingPage2 } from "focusflow-components"
+// import { landingPage2Data } from "@/data/pageData"
+// import { LandingPage2 } from "focusflow-components"
 
 
 
@@ -26,11 +26,11 @@ const Page = () => {
         links={links}
         />
 
-        <LandingPage2
+        {/* <LandingPage2
         {...landingPage2Data}
         bgColor="bg-gradient-to-tr from-orange-400 to-[#00bfff]"
         textColor="text-white"
-        />
+        /> */}
         </>
     )
 }

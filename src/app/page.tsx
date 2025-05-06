@@ -2,20 +2,21 @@
 
 // import Image from "next/image";
 // import img from '../../public/vercel.svg'
-import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
-  CountUpImageTextBox,
-  ParallaxText, 
-  AppearingGradient,
-  VerticalImageTextBox,
-  FullBodyHero, CarouselHero,ThreeBoxHero,
-  ImageLogoHero,
-  FullImageDisplay,
-  FeatureBoxes,
-  Carousel,
-  CarouselGrid,
-  SlideShowCarousel,
-  PriceCards,
-  LandingPage1,
+import {
+  // ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
+  // CountUpImageTextBox,
+  // ParallaxText, 
+  // AppearingGradient,
+  // VerticalImageTextBox,
+  // FullBodyHero, CarouselHero,ThreeBoxHero,
+  // ImageLogoHero,
+  // FullImageDisplay,
+  // FeatureBoxes,
+  // Carousel,
+  // CarouselGrid,
+  // SlideShowCarousel,
+  // PriceCards,
+  // LandingPage1,
   TiltingContent
   // SlidingText
   // TypeWriter
@@ -23,23 +24,23 @@ import {ExperienceCard,ImageAspects,ImageTextBox,TextAndList,
 // import TypeWriter from "@/components/typerTest";
 // import Test from "@/components/test";
 import {
-   countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
-threeBoxHeroData, 
-fullBodyHeroData,
-carouselHeroTestData,
-heroBanner2Data,
-imageLogoHero,
-displayBoxData,
-FullImageDisplayData,
-featureBoxData, carouselGridData,
-carouselData,
-priceCardData,
+//    countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
+// threeBoxHeroData, 
+// fullBodyHeroData,
+// carouselHeroTestData,
+// heroBanner2Data,
+// imageLogoHero,
+// displayBoxData,
+// FullImageDisplayData,
+// featureBoxData, carouselGridData,
+// carouselData,
+// priceCardData,
 tilteSlideData,
-circleStepsData,
+// circleStepsData,
 tiltData2} from "@/data/data";
 import Navbar from "@/components/test";
 // import TiltingContent from "@/components/tiltSlideContent";
-import  CircleSteps  from "@/components/circleStepsTest";
+// import  CircleSteps  from "@/components/circleStepsTest";
 
 // import ColorPalette from "@/components/typerTest";
 // import Herobanner from "@/components/test";

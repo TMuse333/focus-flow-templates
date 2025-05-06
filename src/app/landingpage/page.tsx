@@ -1,8 +1,8 @@
 "use client"
-import { LandingPage1 } from 'focusflow-components'
+// import { LandingPage1 } from 'focusflow-components'
 import "focusflow-components/dist/index.css";
 import React from 'react'
-import { landingPage1Data } from '@/data/pageData'
+// import { landingPage1Data } from '@/data/pageData'
 // import { FullImageHero } from '@/components/herobanner2'
 // import { countUpData, ImageAspectsData, parallaxData, TextAndListData, verticalBoxData,
 //     threeBoxHeroData, 
@@ -37,14 +37,14 @@ const Lander = () => {
         <Navbar
         links={links}
         />
-       
+{/*        
         <LandingPage1
       {...landingPage1Data}
    
       textColor='text-black'
       bgColor='bg-gray-300'
   
-        />
+        /> */}
  
         
         </>

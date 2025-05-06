@@ -395,6 +395,7 @@ export const servicePage1Data: ServicePage1Props = {
 
       }
     ],
+    boxTextColor:'text-black'
     
   },
   carouselImages: {
